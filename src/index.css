@@ -12,6 +12,17 @@ body {
 }
 
 #root {
-    width: 40%;
+    width: 60%;
     margin-top: 5rem;
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 20;
+    }
+
+    #root {
+        width: 80%;
+    }
+
 }
