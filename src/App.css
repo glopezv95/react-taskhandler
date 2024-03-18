@@ -48,6 +48,7 @@ input[type="submit"] {
     background-color: #211951;
     color: #15F5BA;
     font-weight: bold;
+    font-size: 0.7rem;
     cursor: pointer;
 }
 
@@ -57,9 +58,9 @@ ul {
 
 li {
     display: grid;
-    grid-template-columns: 60% 1fr;
+    grid-template-columns: repeat(2, 1fr);
     list-style: none;
-    padding: 0.5rem 0rem 0.5rem 1rem;
+    padding: 0.5rem 0rem 0.5rem 0.6rem;
     margin: 0.5rem 0;
     border: 1px solid #000;
     border-radius: 0.5rem;
@@ -70,7 +71,8 @@ li {
 }
 
 span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: grid;
     place-content: center;
+    padding: 0 0.6rem;
 }
