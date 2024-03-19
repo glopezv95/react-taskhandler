@@ -18,7 +18,7 @@ body {
 
 @media (max-width: 600px) {
     :root {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     #root {
