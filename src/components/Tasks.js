@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import Ul from './Ul';
+import TaskH3 from './TaskH3';
 
 export default function Tasks() {
 
@@ -33,7 +35,7 @@ export default function Tasks() {
 
         <div className='tasks'>
 
-            <h3>{tasklistLength} tasks currently added</h3>
+            <TaskH3 tasklistLength={tasklistLength} />
 
             <form onSubmit={handleChange}>
 
@@ -44,16 +46,7 @@ export default function Tasks() {
 
             </form>
 
-            <ul>
-
-                {tasklist.map((task, index) => 
-                    <li
-                        key={index}
-                        onClick={() => deleteTask(index)}>
-                        {task.name} <span>Added {task.date}</span>
-                    </li>)}
-
-            </ul>
+            <Ul tasklist={tasklist} deleteTask={deleteTask}/>
 
         </div>
 

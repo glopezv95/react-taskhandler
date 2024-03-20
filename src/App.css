@@ -27,8 +27,7 @@ h3 {
 #input-line {
     height: 2rem;
     display: grid;
-    grid-template-columns: 75% 20%;
-    justify-content: space-between;
+    grid-template-columns: 75% 25%;
 }
 
 input[type="text"],
@@ -44,6 +43,9 @@ input[type="text"] {
 }
 
 input[type="submit"] {
+    width: 5rem;
+    height: 2rem;
+    margin: auto;
     border: none;
     background-color: #211951;
     color: #15F5BA;
@@ -57,29 +59,51 @@ ul {
     padding-left: 0;
 }
 
-li {
+div.task-li {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    list-style: none;
-    padding: 0.5rem 0rem 0.5rem 0.6rem;
-    margin: 0.5rem 0;
-    border: 1px solid #000;
-    border-radius: 0.5rem;
-    cursor: pointer;
+    grid-template-columns: 75% 25%;
+}
+
+li {
+    height: 2rem;
+    padding: 0 1rem;
+    margin: 0.4rem 0;
     background-color: #211951;
     color: #15F5BA;
-    text-transform: capitalize;
+    border-radius: 0.5rem;
+    list-style: none;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
 }
 
 span {
     font-size: 0.8rem;
+    text-align: end;
+}
+
+#button {
+    width: 2rem;
+    height: 2rem;
+    background-color: #15F5BA;
+    color: #211951;
+    font-weight: bold;
+    margin: auto;
+    border: none;
+    border-radius: 50%;
     display: grid;
-    place-content: center;
-    padding: 0 0.6rem;
+    place-items: center;
+    cursor: pointer;
+}
+
+img {
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 @media (max-width: 600px) {
     input[type="submit"] {
         font-size: 0.6rem;
+        width: 3.5rem;
     }
 }
