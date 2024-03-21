@@ -53,6 +53,8 @@ input[type="submit"] {
     font-size: 0.7rem;
     cursor: pointer;
     text-align: center;
+    transition: 
+        transform ease 500ms;
 }
 
 ul {
@@ -83,22 +85,43 @@ span {
 }
 
 #button {
-    width: 2rem;
+    width: 5rem;
     height: 2rem;
     background-color: #15F5BA;
     color: #211951;
     font-weight: bold;
     margin: auto;
     border: none;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
+    transition: 
+        transform ease 200ms;
 }
 
 img {
-    width: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-left: 0.7rem;
+    transition: 
+        transform ease 500ms;
+}
+
+#button span {
     height: 0.8rem;
+    font-size: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+#button:hover,
+input[type="submit"]:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#button:hover img {
+    transform: rotate(90deg);
 }
 
 @media (max-width: 600px) {

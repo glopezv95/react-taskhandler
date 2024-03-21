@@ -18,6 +18,7 @@ export default function Ul({ tasklist, deleteTask }) {
 
                         <div id="button" onClick={() => deleteTask(index)}>
                             <img src={close} alt="Eliminate task"/>
+                            <span>Delete</span>
                         </div>
 
                     </div>
